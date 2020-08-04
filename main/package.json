@@ -1,7 +1,7 @@
 {
-  "name": "main",
+  "name": "ts-electron-react-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "Basic template to creating electron app with react and typescript",
   "main": "./dist/app.js",
   "scripts": {
     "start": "run-p compile nodemon",

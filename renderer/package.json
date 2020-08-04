@@ -1,5 +1,6 @@
 {
-  "name": "renderer",
+  "name": "ts-electron-react-starter",
+  "description": "Basic template to creating electron app with react and typescript",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
