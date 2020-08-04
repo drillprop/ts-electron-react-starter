@@ -2,9 +2,11 @@
   "name": "main",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "run-p compile nodemon",
+    "compile": "tsc src/app.ts -w --outDir dist",
+    "nodemon": "cross-env NODE_ENV=development nodemon --exec \"wait-on http://localhost:3000 && electron .\""
   },
   "keywords": [],
   "author": "",
