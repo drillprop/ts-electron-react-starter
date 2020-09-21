@@ -5,7 +5,7 @@
   "main": "./dist/app.js",
   "scripts": {
     "start": "run-p compile nodemon",
-    "compile": "tsc src/app.ts -w --outDir dist",
+    "compile": "tsc -w",
     "nodemon": "cross-env NODE_ENV=development nodemon --exec \"wait-on http://localhost:3000 && electron .\""
   },
   "keywords": [],
